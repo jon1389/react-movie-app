@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff522e3b.css",
-    "main.js": "/static/js/main.76fc5875.js",
-    "static/js/787.784592d1.chunk.js": "/static/js/787.784592d1.chunk.js",
-    "static/media/BebasNeue Book.woff": "/static/media/BebasNeue Book.f410583925dbc700f42d.woff",
-    "static/media/BebasNeue Regular.woff": "/static/media/BebasNeue Regular.f1af9e532efc748b505a.woff",
-    "static/media/BebasNeue Light.woff": "/static/media/BebasNeue Light.91159b1a18732467aca7.woff",
-    "static/media/BebasNeue.woff": "/static/media/BebasNeue.61526bed2f2eda831210.woff",
-    "index.html": "/index.html",
-    "main.ff522e3b.css.map": "/static/css/main.ff522e3b.css.map",
-    "main.76fc5875.js.map": "/static/js/main.76fc5875.js.map",
-    "787.784592d1.chunk.js.map": "/static/js/787.784592d1.chunk.js.map"
+    "main.css": "/react-movie-app/static/css/main.bdd688df.css",
+    "main.js": "/react-movie-app/static/js/main.37e38330.js",
+    "static/media/BebasNeue Book.woff": "/react-movie-app/static/media/BebasNeue Book.f410583925dbc700f42d.woff",
+    "static/media/BebasNeue Regular.woff": "/react-movie-app/static/media/BebasNeue Regular.f1af9e532efc748b505a.woff",
+    "static/media/BebasNeue Light.woff": "/react-movie-app/static/media/BebasNeue Light.91159b1a18732467aca7.woff",
+    "static/media/BebasNeue.woff": "/react-movie-app/static/media/BebasNeue.61526bed2f2eda831210.woff",
+    "index.html": "/react-movie-app/index.html",
+    "main.bdd688df.css.map": "/react-movie-app/static/css/main.bdd688df.css.map",
+    "main.37e38330.js.map": "/react-movie-app/static/js/main.37e38330.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff522e3b.css",
-    "static/js/main.76fc5875.js"
+    "static/css/main.bdd688df.css",
+    "static/js/main.37e38330.js"
   ]
 }
