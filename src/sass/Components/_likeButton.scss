@@ -1,0 +1,47 @@
+.likeButton {
+	border: none;
+	background-color: transparent;
+	outline: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: azure;
+	&__icon {
+		cursor: pointer;
+	}
+	&__unlike {
+		position: absolute;
+		z-index: 2;
+		opacity: 1;
+		font-size: 20px;
+		transition: opacity 1000ms;
+		&:hover + .likeButton__like {
+			opacity: 1;
+		}
+		&:hover {
+			opacity: 0;
+		}
+		&:focus {
+			outline: none !important;
+		}
+	}
+	&__like {
+		background-image: -webkit-linear-gradient(#9356dc, #ff79da);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: red;
+		opacity: 0;
+		font-size: 20px;
+		transition: opacity 1000ms;
+	}
+	&__liked {
+		background-image: -webkit-linear-gradient(#9356dc, #ff79da);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: red;
+		opacity: 1;
+		font-size: 20px;
+		transition: opacity 1000ms;
+	}
+}

@@ -1,0 +1,332 @@
+.header {
+  z-index: 1000;
+  position: sticky;
+  position: -webkit-sticky;
+  /* For macOS/iOS Safari */
+  top: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  background-color: black;
+  width: 100%;
+  box-shadow: 2px 2px 13px 2px rgba(194, 194, 194, 0.54);
+  margin-bottom: 20px;
+}
+
+.header__title {
+  font-family: "Bebas Neue";
+  background: linear-gradient(to right, #e40303, #a84545);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 20px;
+  font-size: 40px;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: sticky;
+  width: 36px;
+  height: 30px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: red;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #343435;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-item {
+  margin-bottom: 15px;
+  font-family: "Bebas Neue Regular";
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+}
+
+.menu-item:hover {
+  color: #b30303;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.cards__pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.card {
+  max-width: 200px;
+  margin: 20px 20px;
+  box-shadow: 2px 2px 13px 2px rgba(194, 194, 194, 0.54);
+  border-radius: 15px;
+  background-color: #343435;
+  color: white;
+}
+
+.card__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card__body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__body__title {
+  display: flex;
+  justify-content: center;
+  font-family: "Bebas Neue";
+  font-size: large;
+}
+
+.card__body__texts {
+  margin: 10px 0;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: red;
+  border-color: red;
+}
+
+.page-link {
+  color: white;
+  background-color: #343435;
+}
+
+.modal {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.modal__openBtn {
+  background-color: red;
+  width: 100%;
+  border: none;
+}
+
+.modal__openBtn:hover {
+  background-color: #a90000;
+}
+
+.modal__img {
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.modal__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.modal__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.modal__titleTag {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.modal__text {
+  font-size: 12px;
+  margin: 0;
+}
+
+hr {
+  margin: 5px 0px 5px 0;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  background-color: #343435;
+  color: whitesmoke;
+}
+
+.modal-body {
+  padding-top: 5px;
+}
+
+.likeButton {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+}
+
+.likeButton__icon {
+  cursor: pointer;
+}
+
+.likeButton__unlike {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  font-size: 20px;
+  transition: opacity 1000ms;
+}
+
+.likeButton__unlike:hover + .likeButton__like {
+  opacity: 1;
+}
+
+.likeButton__unlike:hover {
+  opacity: 0;
+}
+
+.likeButton__unlike:focus {
+  outline: none !important;
+}
+
+.likeButton__like {
+  background-image: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: red;
+  opacity: 0;
+  font-size: 20px;
+  transition: opacity 1000ms;
+}
+
+.likeButton__liked {
+  background-image: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: red;
+  opacity: 1;
+  font-size: 20px;
+  transition: opacity 1000ms;
+}
+
+.carouselItem {
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  align-items: center;
+  padding: 10px;
+}
+
+.carouselItem__img {
+  border-radius: 10px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 5px black;
+  max-width: 100px;
+}
+
+.alice-carousel__stage {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Bebas Neue Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BebasNeue Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BebasNeue.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bebas Neue Book";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BebasNeue Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bebas Neue Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BebasNeue Light.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */

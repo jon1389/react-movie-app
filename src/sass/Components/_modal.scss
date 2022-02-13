@@ -1,0 +1,54 @@
+.modal {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	&__openBtn {
+		background-color: red;
+		width: 100%;
+		border: none;
+	}
+	&__openBtn:hover {
+		background-color: #a90000;
+	}
+	&__img {
+		object-fit: cover;
+		width: 100%;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+	}
+	&__header {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	&__title {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 20px;
+	}
+	&__titleTag {
+		font-size: 13px;
+		font-style: italic;
+	}
+	&__text {
+		font-size: 12px;
+		margin: 0;
+	}
+}
+
+hr {
+	margin: 5px 0px 5px 0;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+	background-color: #343435;
+	color: whitesmoke;
+}
+
+.modal-body {
+	padding-top: 5px;
+}
