@@ -1,4 +1,5 @@
 {
+	"homepage": "https://jon1389.github.io/react-movie-app/",
 	"name": "react-movie-app",
 	"version": "0.1.0",
 	"private": true,
@@ -52,8 +53,5 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
-	},
-	"devDependencies": {
-		"gh-pages": "^3.2.3"
 	}
 }
